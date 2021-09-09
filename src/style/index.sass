@@ -1,5 +1,6 @@
 @import './vars.sass'
 @import './font.sass'
+@import './modificators.sass'
 
 @import '~bootstrap/scss/bootstrap.scss'
 
@@ -33,3 +34,89 @@
 .Footer
   background-color: $white
   border-top: $border
+
+.font-orange
+  color: $primary
+
+
+.Spekt
+  background-color: $white
+  border: $border
+  padding: 1rem
+  @extend .p-md-xs
+  @extend .my-xxs
+
+
+.Dropdown
+  @extend .d-flex
+  @extend .flex-column
+  @extend .align-items-center
+  &__title
+    width: 200px
+    cursor: pointer
+    position: relative
+    display: inline-block
+    padding: 15px 0 19px
+    @extend .d-flex
+    &__text
+      width: 100%
+      @extend .flex-grow-1
+      @extend .no-select
+      &::after
+        content: ''
+        position: absolute
+        right: 32px
+        top: 50%
+        @include media-breakpoint-down(sm)
+          top: 35%
+        width: 32px
+        height: 32px
+        @extend .def-img
+        background-image: url(./img/dropdown__arrow.svg)
+        transform: translateY(-50%) rotate(-90deg)
+        transition: transform $menu-transition
+        .Dropdown--opened &
+          transform: translateY(-50%) rotate(0deg)
+  &__content
+    width: 100%
+    transition: height $menu-transition
+    overflow: hidden
+    &__container
+      padding: 32px 0 32px
+      @include media-breakpoint-down(md)
+        padding: 20px 0 20px
+      @include media-breakpoint-down(sm)
+        padding: 14px 0 14px
+      width: 100%
+      @extend .d-flex
+      @extend .flex-column
+  &--spekt
+    border: $border
+    border-radius: 12px
+    @include media-breakpoint-down(sm)
+      border-radius: 8px
+    .Dropdown__content
+      padding: 0px 24px 0px
+      @include media-breakpoint-down(md)
+        padding: 0px 21px 0px
+      @include media-breakpoint-down(sm)
+        padding: 0px 16px 0px
+      &__container
+        padding: 7px 0px 41px
+        @include media-breakpoint-down(md)
+          padding: 6px 0px 42px
+        @include media-breakpoint-down(sm)
+          padding: 25px 0px 43px
+    .Dropdown__title
+      padding: 23px 24px 29px
+      @include media-breakpoint-down(md)
+        padding: 23px 21px 27px
+      @include media-breakpoint-down(sm)
+        padding: 13px 16px 15px
+      &__text
+        position: relative
+        &::after
+          @extend .d-none
+  &--opened
+    .Dropdown__title__text__Plus
+      transform: translateY(-50%) rotate(45deg)
