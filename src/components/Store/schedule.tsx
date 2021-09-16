@@ -16,7 +16,7 @@ const schedule = [
       {
         date: '6 сентября, пн',
         time: '18:30',
-        link: 'https://perfotachka.timepad.ru/event/1759691/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
       },
     ],
   },
@@ -30,7 +30,7 @@ const schedule = [
       {
         date: '6 сентября, пн',
         time: '20:00 - 20:45',
-        link: 'https://perfotachka.timepad.ru/event/1759691/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
       },
     ],
   },
@@ -49,7 +49,7 @@ const schedule = [
       {
         date: '6 сентября, пн',
         time: '21:00 - 21:50',
-        link: 'https://perfotachka.timepad.ru/event/1759691/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
       },
     ],
   },
@@ -64,7 +64,7 @@ const schedule = [
       {
         date: '6 сентября, пн',
         time: '19:00 - 00:00',
-        link: 'https://perfotachka.timepad.ru/event/1759691/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
       },
     ],
   },
@@ -79,8 +79,8 @@ const schedule = [
       {
         startDate: '7 сентября',
         endDate: '7 октября',
-        time: 'в любое время',
-        link: '',
+        time: '∞',
+        otherText: <><Link to='https://t.me/Perfotachka_Incident_Bot'>Участвовать</Link></>,
       },
     ],
   },
@@ -94,12 +94,12 @@ const schedule = [
       {
         date: '8 сентября, ср',
         time: '14:00 - 14:45',
-        link: 'https://perfotachka.timepad.ru/event/1762452/'
+        registerLink: 'https://perfotachka.timepad.ru/event/1762452/'
       },
       {
         date: '20 сентября',
         time: '14:00 - 14:45',
-        // link: 'https://perfotachka.timepad.ru/event/1762452/'
+        otherText: <>Регистрация на 20 сентября откроется 15 сентября. Мы напомним о ней в рассылке:  <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
       },
     ],
   },
@@ -128,27 +128,27 @@ const schedule = [
       {
         date: '10 сентября, пт',
         time: '19:00 - 19:45',
-        link: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
       },
       {
         date: '10 сентября, пт',
         time: '19:45 - 20:30',
-        link: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
       },
       {
         date: '10 сентября, пт',
         time: '20:30 - 21:15',
-        link: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
       },
       {
         date: '10 сентября, пт',
         time: '21:15 - 22:00',
-        link: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
       },
       {
         date: '10 сентября, пт',
         time: '22:00 - 22:45',
-        link: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
       },
     ],
   },
@@ -167,47 +167,53 @@ const schedule = [
       {
         date: '10 сентября, пт',
         time: '16:00 - 16:45',
-        link: 'https://perfotachka.timepad.ru/event/1762469/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762469/',
       },
       {
         date: '10 сентября, пт',
         time: '16:45 - 17:30',
-        link: 'https://perfotachka.timepad.ru/event/1762469/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762469/',
       },
       {
         date: '10 сентября, пт',
         time: '17:30 - 18:15',
-        link: 'https://perfotachka.timepad.ru/event/1762469/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762469/',
       },
       {
         date: '18 сентября, сб',
         time: '18:00 - 18:45',
-        link: '',
+        registerLink: '',
+        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
       },
       {
         date: '18 сентября, сб',
         time: '18:45 - 19:30',
-        link: '',
+        registerLink: '',
+        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
       },
       {
         date: '18 сентября, сб',
         time: '19:30 - 20:15',
-        link: '',
+        registerLink: '',
+        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
       },
       {
         date: '26 сентября, вс',
         time: '18:00 - 18:45',
-        link: '',
+        registerLink: '',
+        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
       },
       {
         date: '26 сентября, вс',
         time: '18:45 - 19:30',
-        link: '',
+        registerLink: '',
+        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
       },
       {
         date: '26 сентября, вс',
         time: '19:30 - 20:15',
-        link: '',
+        registerLink: '',
+        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
       },
     ],
   },
@@ -222,7 +228,7 @@ const schedule = [
       {
         date: '11 сентября, сб',
         time: 'в любое время с 16:00 до 20:00',
-        link: 'https://perfotachka.timepad.ru/event/1762552/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762552/',
       },
     ],
   },
@@ -241,7 +247,7 @@ const schedule = [
       {
         date: '12 сентбря, вс',
         time: '',
-        link: 'https://perfotachka.timepad.ru/event/1762568/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762568/',
       },
     ],
   },
@@ -262,27 +268,27 @@ const schedule = [
       {
         date: '12 сентбря, вс',
         time: '19.00-19:30',
-        link: 'https://perfotachka.timepad.ru/event/1762562/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
       },
       {
         date: '12 сентбря, вс',
         time: '19.45-20:15',
-        link: 'https://perfotachka.timepad.ru/event/1762562/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
       },
       {
         date: '12 сентбря, вс',
         time: '20.30-21:00',
-        link: 'https://perfotachka.timepad.ru/event/1762562/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
       },
       {
         date: '12 сентбря, вс',
         time: '21.15-21:45',
-        link: 'https://perfotachka.timepad.ru/event/1762562/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
       },
       {
         date: '12 сентбря, вс',
         time: '22.00-22:30',
-        link: 'https://perfotachka.timepad.ru/event/1762562/',
+        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
       },
     ],
   },
@@ -297,7 +303,207 @@ const schedule = [
       {
         date: '13 сентября, пн',
         time: '',
-        link: '',
+        registerLink: '',
+      },
+    ],
+  },
+  {
+    name: 'Fake taxi (театр по согласию)',
+    age: 18,
+    short: 'Любовные игры',
+    desc: '',
+    disc: 'Для тех, кто готов к интимным разговорам в машине.',
+    creators: 'Марта Райцес',
+    shows: [
+      {
+        date: '16 сентября, чт',
+        time: '',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Инопланетный гость',
+    age: 18,
+    desc: <>
+      Быть гостем — непросто. Как вы себя чувствуете, когда приезжаете в новый город? А в новую страну? А что будет, если вы вдруг окажетесь на новой планете? Что вам здесь надо? Кто это вокруг вас? Почему все такие странные? Чем они занимаются? Так много вопросов, и так мало ответов.
+      <br />
+      Квест-аттракцион, в котором зритель становится инопланетянином и отправляется исследовать другую планету.
+    </>,
+    short: 'Квест-аттракцион',
+    disc: 'Театрализованный аттракцион для трех смелых участников, которые не боятся новых обстоятельств и неоднозначных заданий.',
+    creators: 'Ширяева Екатерина',
+    shows: [
+      {
+        date: '17 сентября, пт',
+        time: '21:30 - 22:30 (23:00)',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Душная тачка',
+    age: 18,
+    short: 'Всех научат жить правильно. И немного водить машину',
+    desc: 'Душные речи от самых душных инструкторов вождения. В программе наблюдение за жалкими попытками освоить механику Тойоты: инструкторы-перформеры будут учить девушку вождению, а девушка будет рассказывать о своих ощущениях на телесном уровне — как машина становится продолжением ее тела, реагирующего на внешние факторы.',
+    disc: 'Для тех, кто готов подглядывать за чужим уроком вождения.',
+    creators: 'Лена Погорелова, Паша Дорохов',
+    shows: [
+      {
+        date: '18 сентября',
+        time: '12:00 - 12:30',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+      {
+        date: '18 сентября',
+        time: '12:40 - 13:10',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+      {
+        date: '18 сентября',
+        time: '13:20 - 13:50',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Чувство единения с партнером',
+    age: 18,
+    short: 'Классический перформанс',
+    desc: <>Ваня Демидкин, автор перформанса: «У меня есть водительские права уже больше 4 лет, но я никогда не чувствовал себя частью автомобильной культуры с ее бросающими из крайности в крайность, гипертрофированными законами. «Чувство единения с партнером» — это мой способ проникнуть внутрь недоступной культуры. В течение 5 часов я буду толкать Перфотачку по городу, принимая помощь от прохожих и зрителей. Участвовать могут все: наблюдать за мной, помогать или мешать — выбор за вами. Следить за передвижением можно в Инстаграме <Link to='https://instagram.com/perfotachka'>@perfotachka</Link> и <Link to='https://instagram.com/vnchkaa'>@vnchkaa</Link>».</>,
+    disc: 'Для тех, кто хочет подключиться к трансляции или наблюдению/участию.',
+    creators: 'Ваня Демидкин',
+    shows: [
+      {
+        date: '19 сентября, вс',
+        time: '10:00 - 15:00',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Стритрейстенсив',
+    age: 16,
+    desc: '«Стритрейстенсив» – это экспресс-курс по стритрейсингу для начинающих и продолжающих. Особая учебная программа направлена на развитие воображения, мелкой моторики и навыков участия в нелегальных заездах на автомобилях. Окунитесь в мир горящих покрышек и модных крутышек. Навыки вождения и водительские права необязательны. Перед посещением рекомендуем проконсультироваться с врачом.',
+    short: 'Перформативный аттракцион',
+    disc: 'Для тех, кто готов к общению и компьютерным играм.',
+    creators: 'Фёдор Лудинов',
+    shows: [
+      {
+        date: '19 сентября, вс',
+        time: '19:30 - 20:00',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+      {
+        date: '19 сентября, вс',
+        time: '20:00 - 20:30',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+      {
+        date: '19 сентября, вс',
+        time: '20:30 - 21:00',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+      {
+        date: '19 сентября, вс',
+        time: '21:00 - 21:30',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+      {
+        date: '19 сентября, вс',
+        time: '21:30 - 22: 00',
+        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Связь',
+    age: 16,
+    short: 'Объектно-ориентированные движения в пространстве и времени',
+    desc: <>
+      это соединение. <br />
+      это слияние.<br />
+      внутреннего и внешнего. <br />
+      машинного и человеческого. <br />
+      это проводник между живым и неживым. <br />
+      это привязка к чему-то. <br />
+      это привязка к кому-то. <br />
+      это часть тебя. <br />
+      ты наблюдатель. <br />
+      ты ведомый. <br />
+      ты ведущий.<br />
+    </>,
+    disc: 'Для тех, кто готов наблюдать за перформансом.',
+    creators: 'Прохорова Арина, Дагин Дмитрий',
+    shows: [
+      {
+        date: '20 сентября, пн',
+        time: '',
+        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Давай всё обсудим',
+    age: 16,
+    short: 'Пластическая коммуникация. Человек-машина',
+    desc: '',
+    disc: 'Для тех, кто готов наблюдать за перфоративной инсталляцией. ',
+    creators: 'Даша Мовельян, Лена Юферова',
+    shows: [
+      {
+        date: '22 сентября, ср',
+        time: '',
+        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Я снова это слышу и прохожу мимо, потому что устал',
+    age: 16,
+    short: 'Спектакль без ответов',
+    desc: '',
+    disc: 'Для тех, кто готов наблюдать и участвовать.',
+    creators: 'Молканова Анна Андреевна и перформеры',
+    shows: [
+      {
+        date: '23 сентября, чт',
+        time: '15:00 - 15:50',
+        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Внутри',
+    age: 6,
+    short: 'Моноспектакль из Брянска',
+    desc: <>
+      Тачка 1987-го года запускает череду воспоминаний, лежащих в основе моноспектакля. В уединенном пространстве Перфотачки зрители узнают историю взаимоотношений отца и дочери, тесно-переплетенную с автомобилем и нуждающуюся в самостоятельном осмыслении. 
+      <br />
+      В ходе спектакля авторка исследует главный объект памятования и смещает фокус внимания с автомобиля на образ отца.
+    </>,
+    disc: 'Для тех, кто готов сесть в машину и наблюдать.',
+    creators: 'Дарья Савельева',
+    shows: [
+      {
+        date: '24 сентября, пт',
+        time: '',
+        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+      },
+    ],
+  },
+  {
+    name: 'Русское поле экспериментов',
+    age: 18,
+    short: 'Перформанс с любовью к Омску',
+    desc: '',
+    disc: 'Для тех, кто готов провести вечер в поле.',
+    creators: 'Анастасия Быцань, Марина Бурдинская и Вацлав Дембовский',
+    shows: [
+      {
+        date: '25 сентября, сб',
+        time: '',
+        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
       },
     ],
   },
@@ -311,147 +517,7 @@ const schedule = [
       {
         date: '',
         time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
-      },
-    ],
-  },
-  {
-    name: '',
-    age: 16,
-    desc: '',
-    disc: '',
-    creators: '',
-    shows: [
-      {
-        date: '',
-        time: '',
-        link: '',
+        registerLink: '',
       },
     ],
   },

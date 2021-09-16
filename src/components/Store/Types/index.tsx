@@ -25,7 +25,8 @@ export type Show = {
   startDate?: string
   endDate?: string
   time?: string
-  link?: string
+  registerLink?: string
+  otherText?: string | JSX.Element
 }
 
 export type MappedShow = Show & Spekt & {

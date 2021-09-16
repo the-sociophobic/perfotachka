@@ -5,7 +5,7 @@ const persons = [
   },
   {
     name: 'Ваня Демидкин',
-    link: 'vnchka'
+    link: 'vnchkaa'
   },
   {
     name: 'Марк Кожарский',
@@ -18,6 +18,10 @@ const persons = [
   {
     name: 'Леф Васильев',
     link: 'the_sociophobic'
+  },
+  {
+    name: 'Фёдор Лудинов',
+    link: 'fedlud'
   },
 ]
 .map(person => ({

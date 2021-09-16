@@ -25,7 +25,7 @@ const parseSchedule = (schedule: SpektRaw[]): Day[] => {
     .filter((spekt: SpektRaw) => spekt.name.length > 0)
     .forEach((spekt: SpektRaw) =>
       spekt.shows
-        .filter((show: Show) => show.date)
+        .filter((show: Show) => show.date || (show.startDate && show.endDate))
         .forEach((show: Show) => {
           let mappedShow: MappedShow = {
             ...omit(spekt, ['shows']),

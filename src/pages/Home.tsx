@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { isAfter, isToday } from 'date-fns'
+
 import { Context } from '../components/Store'
 import { Day as DayType } from '../components/Store/Types'
 import Day from '../components/Day'
@@ -15,6 +17,7 @@ class Home extends React.Component {
         <div className='container'>
           <div className='Home__logo' />
           {this.context.days
+            .filter((day: DayType) => isToday(day.date) || isAfter(day.date, new Date()))
             .map((day: DayType) => 
               <Day day={day} />
             )

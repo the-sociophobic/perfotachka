@@ -15,10 +15,18 @@ type Props = {
 
 const Spekt: React.FC<Props> = ({ spekt }) =>
     <div className='Spekt'>
-      <div className='row'>
-        <div className='col-12 col-sm-6 col-md-3'>
-          <div className='h1 px-3 px-sm-xs'>
+      <div className='row d-flex flex-column-reverse flex-sm-row'>
+        <div className='col-12 col-sm-6 col-md-3 px-3 px-sm-xs'>
+          <div className='h1'>
             {spekt.time}
+          </div>
+          {spekt.registerLink &&
+            <Link to={spekt.registerLink}>
+              Регистрация
+            </Link>
+          }
+          <div className='p p--s'>
+            {spekt.otherText}
           </div>
         </div>
         <div className='col-12 col-sm-6 col-md-9 px-4 p-sm-0'>
@@ -28,7 +36,7 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
             </h2>
           {/* </Link> */}
           {spekt.creators &&
-            <div className='p p--s d-flex flex-row flex-wrap'>
+            <div className='p p--s d-flex flex-row flex-wrap mb-xxs'>
               {spekt.creators
                 .map((creator: Person, index) =>
                   <div className='me-1'>
