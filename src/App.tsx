@@ -39,7 +39,7 @@ const App = () =>
               )}
             </Switch>
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </ScrollToTop>
       </div>
     </Provider>

@@ -16,7 +16,7 @@ type Props = RouteComponentProps<PathParamsType> & {
   className?: string
   activeClassName?: string
   style?: object
-  to: string
+  to: string | undefined
   sameTab?: boolean
   children?: any
   onClick?: Function

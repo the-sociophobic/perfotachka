@@ -77,7 +77,8 @@ const schedule = [
     creators: 'Леф Васильев, Марк Кожарский',
     shows: [
       {
-        date: '7 сентября - 7 октября,',
+        startDate: '7 сентября',
+        endDate: '7 октября',
         time: 'в любое время',
         link: '',
       },

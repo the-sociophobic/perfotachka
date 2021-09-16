@@ -1,33 +1,55 @@
 import schedule from '../schedule'
+import parseSchedule from './parseSchedule'
 
 
-export type StateType = {
-  ready: boolean
-  spekts: Spekt[]
-}
-
-export type Spekt = {
+export type _Spekt = {
   name: string
-  age: number,
+  age: number
   short?: string
   desc?: string | JSX.Element
-  creators?: string
   disc?: string
-  shows: Show[],
+}
+
+export type SpektRaw = _Spekt & {
+  creators?: string
+  shows: Show[]
+}
+
+export type Spekt = _Spekt & {
+  link: string
+  creators: Person[]
 }
 
 export type Show = {
   date?: string
+  startDate?: string
+  endDate?: string
   time?: string
   link?: string
 }
 
-const initialState = {
-  ready: true,
-  spekts: schedule
+export type MappedShow = Show & Spekt & {
+  dateObj?: any
 }
 
+export type Day = {
+  date: Date
+  shows: MappedShow[]
+}
 
-export {
-  initialState,
+export type Person = {
+  name: string
+  link?: string
+}
+
+export type StateType = {
+  ready: boolean
+  spekts: SpektRaw[]
+  days: Day[]
+}
+
+export const initialState = {
+  ready: true,
+  spekts: schedule,
+  days: parseSchedule(schedule)
 }
