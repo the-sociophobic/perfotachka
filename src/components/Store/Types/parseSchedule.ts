@@ -14,8 +14,11 @@ import parsePersons from './parsePersons'
 import transliterate from '../../../utils/transliterate'
 
 
+const numberWithThero = (number: string) =>
+  number.length === 1 ? `0${number}` : number
+
 const parseDate = (date: string) =>
-  new Date(`2021-${date.includes('сент') ? '09' : '10'}-${date.split(' ')[0]}`)
+  new Date(`2021-${date.includes('сент') ? '09' : '10'}-${numberWithThero(date.split(' ')[0])}`)
 
 const parseSchedule = (schedule: SpektRaw[]): Day[] => {
   let days: Day[] = []
@@ -37,11 +40,12 @@ const parseSchedule = (schedule: SpektRaw[]): Day[] => {
 
           if (show.date)
             dates = [parseDate(show.date)]
-          if (show.startDate && show.endDate)
+          if (show.startDate && show.endDate) {
             dates = eachDayOfInterval({
               start: parseDate(show.startDate),
               end: parseDate(show.endDate)
             })
+          }
 
           dates.forEach((date: Date) =>
             mappedShows.push({
