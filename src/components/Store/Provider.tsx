@@ -17,17 +17,10 @@ type Props = RouteComponentProps<{
 }>
 
 
-const _setState = (_this: any, obj: any) => {
-  _this.setState(obj)
-  //TODO send async post
-}
-
-
 class Provider extends React.Component<Props, StateType> {
 
   state = {
     ...initialState,
-    locale: (new URLSearchParams(this.props.location.search)).get('en') === '' ? 'eng' : 'rus'
   }
 
   // cookies = new Cookies()
@@ -52,7 +45,7 @@ class Provider extends React.Component<Props, StateType> {
 
   stateAndSetters = () => {
     const nonState = {
-      setState: (obj: any) => _setState(this, obj),
+      setState: (obj: any) => this.setState(obj),
   
       openPopup: () =>
         document.body.classList.add('overflow-hidden'),

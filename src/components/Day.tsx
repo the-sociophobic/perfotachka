@@ -16,7 +16,10 @@ type Props = {
 
 
 const Day: React.FC<Props> = ({ day }) =>
-    <div className='Day mb-xs'>
+    <div
+      ref={day.ref}
+      className='Day mb-xs'
+    >
       <h1 className='w-100 h1 h1--xl font-orange'>
         {format(day.date, 'dd MMMM, iiii', { locale: ru })}
       </h1>

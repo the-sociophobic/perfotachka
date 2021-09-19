@@ -12,6 +12,7 @@ import {
 } from './index'
 import parsePersons from './parsePersons'
 import transliterate from '../../../utils/transliterate'
+import React from 'react'
 
 
 const numberWithThero = (number: string) =>
@@ -62,6 +63,7 @@ const parseSchedule = (schedule: SpektRaw[]): Day[] => {
 
     if (index === -1)
       days.push({
+        ref: React.createRef(),
         date: show.dateObj,
         shows: [show]
       })

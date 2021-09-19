@@ -35,6 +35,61 @@
     height: 100%
     object-fit: contain
 
+.Header
+  width: 100%
+  height: 60px
+  background-color: white
+  border-bottom: $border
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  &__button
+    position: absolute
+    top: 0
+    width: 60px
+    height: 60px
+    cursor: pointer
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 5px
+      width: 50px
+      height: 60px
+      background: linear-gradient(rgba(255, 255, 255, 0), $white 25%, $white)
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      @extend .def-img
+      background-size: 75%
+      background-image: url(./img/dropdown__arrow.svg)
+    &--prev
+      left: 0
+      &::before,
+      &::after
+        transform: rotate(90deg)
+    &--next
+      right: 0
+      &::before,
+      &::after
+        transform: rotate(-90deg)
+  &__link
+    height: 60px
+    line-height: 60px
+    cursor: pointer
+    overflow-x: hidden
+    text-align: center
+    transition: width $header-transition
+    font-family: 'AnonymousPro'
+    &--active
+      color: $primary
+
+
 .Footer
   background-color: $white
   border-top: $border
@@ -53,7 +108,9 @@
 
 
 .Home
-  padding-top: 100vh
+  &__logo
+    padding-top: 100vh
+
 
 
 .Dropdown

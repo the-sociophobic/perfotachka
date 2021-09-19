@@ -1,3 +1,8 @@
+import React from 'react'
+
+import { isAfter, isToday } from 'date-fns'
+
+import { Day as DayType } from '../Types'
 import schedule from '../schedule'
 import parseSchedule from './parseSchedule'
 
@@ -36,6 +41,7 @@ export type MappedShow = Show & Spekt & {
 export type Day = {
   date: Date
   shows: MappedShow[]
+  ref: any
 }
 
 export type Person = {
@@ -47,10 +53,28 @@ export type StateType = {
   ready: boolean
   spekts: SpektRaw[]
   days: Day[]
+  todaysIndex: number
+  filteringIndex: number
+  homeRef: any
+  aboutRef: any
+  QandARef: any
+  titlesRef: any
 }
+
+const parsedSchedule = parseSchedule(schedule)
+const todaysIndex = parsedSchedule
+.filter((day: DayType) =>
+  isToday(day.date) || isAfter(day.date, new Date()))
+.length
 
 export const initialState = {
   ready: true,
   spekts: schedule,
-  days: parseSchedule(schedule)
+  days: parsedSchedule,
+  todaysIndex: todaysIndex,
+  filteringIndex: todaysIndex,
+  homeRef: React.createRef(),
+  aboutRef: React.createRef(),
+  QandARef: React.createRef(),
+  titlesRef: React.createRef(),
 }
