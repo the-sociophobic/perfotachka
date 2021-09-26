@@ -9,6 +9,7 @@ import { debounce } from 'debounce'
 
 import { Day } from './Store/Types'
 import { Context } from './Store'
+import isProd from '../utils/isProd'
 
 
 type Props = RouteComponentProps<{
@@ -31,13 +32,16 @@ class Header extends React.Component<Props, State> {
   resizeObs: any
 
   componentDidMount = () => {
-    window.addEventListener('scroll', this.debouncedHandleScroll.bind(this))
-    this.resizeObs = new ResizeObserver(this.updateContentHeight.bind(this))
-      .observe(this.containerRef.current)
+    if (isProd()) {
+      window.addEventListener('scroll', this.debouncedHandleScroll.bind(this))
+      this.resizeObs = new ResizeObserver(this.updateContentHeight.bind(this))
+        .observe(this.containerRef.current)
+    }
   }
 
   componentWillUnmount = () =>
-    window.removeEventListener('scroll', this.debouncedHandleScroll.bind(this))
+    isProd() &&
+      window.removeEventListener('scroll', this.debouncedHandleScroll.bind(this))
 
   updateContentHeight = () =>
     this.setState({

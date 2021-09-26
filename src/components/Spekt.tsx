@@ -1,6 +1,7 @@
 import React from 'react'
 import { isBefore } from 'date-fns'
 
+import Link from './Link'
 import Dropdown from './Dropdown'
 import { MappedShow } from './Store/Types'
 import Persons from './Persons'
@@ -19,12 +20,17 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
             {spekt.time}
           </div>
           {(spekt.registerLink && !isBefore(spekt.dateObj || 0, new Date())) &&
-            <div
+            <Link
+              className='Spekt__register'
+              to={`https://perfotachka.timepad.ru/event/${spekt.registerLink}/`}
+            >
+            {/* <div
               className='Spekt__register'
               data-twf-target-state={`{"event_id": ${spekt.registerLink}}`}
-            >
+            > */}
               Регистрация
-            </div>
+            {/* </div> */}
+            </Link>
           }
           {spekt.otherText &&
             <div className='p p--m'>
