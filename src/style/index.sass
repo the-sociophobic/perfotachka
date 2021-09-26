@@ -116,7 +116,7 @@
     background-color: white
     border-bottom: $border
     position: sticky
-    // z-index: 100
+    z-index: 99
     top: 75px
     left: 50%
     transform: translateX(-50%)
@@ -124,6 +124,8 @@
     flex-direction: row
     &__item
       padding: 1rem
+      @extend .p
+      @extend .p--l
       font-family: 'AnonymousPro'
       color: $gray
       cursor: pointer
@@ -238,7 +240,8 @@
   @extend .h1--xl
   @extend .px-4
   @extend .py-3
-  @extend .mb-xl
+  margin-top: 30vh
+  margin-bottom: 100vh
   position: relative
   left: 50%
   transform: translateX(-50%)

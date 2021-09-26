@@ -3,7 +3,7 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { RouteComponentProps } from 'react-router'
 import ResizeObserver from 'resize-observer-polyfill'
-import { format } from 'date-fns'
+import { format, isToday, isTomorrow } from 'date-fns'
 import { ru } from 'date-fns/locale'
 import { debounce } from 'debounce'
 
@@ -83,7 +83,18 @@ class Header extends React.Component<Props, State> {
         .slice(this.context.filteringIndex)
         .map((day: Day) => ({
           ref: day.ref,
-          label: format(day.date, this.isDesktop() ? 'dd MMMM' : 'dd MMMM', { locale: ru })
+          label: format(
+            day.date,
+            isToday(day.date) ?
+              'сегодня'
+              :
+              isTomorrow(day.date) ?
+                'завтра'
+                :
+                'dd MMMM'
+            ,
+            { locale: ru }
+          )
         })),
       {
         ref: this.context.titlesRef,

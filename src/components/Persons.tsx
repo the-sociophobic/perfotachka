@@ -25,7 +25,7 @@ const Persons: React.FC<PersonsProps> = ({
         .map((creator: Person, index: number) =>
           <div
             key={creator.name + index}
-            className='me-1 inherit-all'
+            className='me-2 inherit-all'
           >
             <Link to={creator.link}>
               {creator.name}
