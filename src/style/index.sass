@@ -118,31 +118,28 @@
   @extend .flex-column
   // @extend .align-items-center
   &__title
-    width: 200px
+    width: 100%
     cursor: pointer
     position: relative
     display: inline-block
     padding: 15px 0 19px
-    @extend .d-flex
     &__text
-      width: 100%
-      @extend .flex-grow-1
       @extend .no-select
+      @extend .d-flex
+      @extend .flex-row
+      @extend .align-items-center
+      @extend .justify-content-start
       &::after
         content: ''
-        position: absolute
-        right: 32px
-        top: 50%
-        @include media-breakpoint-down(sm)
-          top: 35%
         width: 32px
+        min-width: 32px
         height: 32px
         @extend .def-img
         background-image: url(./img/dropdown__arrow.svg)
-        transform: translateY(-50%) rotate(-90deg)
+        transform: rotate(-90deg)
         transition: transform $menu-transition
         .Dropdown--opened &
-          transform: translateY(-50%) rotate(0deg)
+          transform: rotate(0deg)
   &__content
     width: 100%
     transition: height $menu-transition
@@ -186,3 +183,9 @@
   &--opened
     .Dropdown__title__text__Plus
       transform: translateY(-50%) rotate(45deg)
+
+
+
+.box 
+  background-color: white
+  border: $border

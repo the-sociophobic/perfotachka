@@ -5,10 +5,10 @@ import { RouteComponentProps } from 'react-router'
 import ResizeObserver from 'resize-observer-polyfill'
 import { format } from 'date-fns'
 import { ru } from 'date-fns/locale'
+import { debounce } from 'debounce'
 
 import { Day } from './Store/Types'
 import { Context } from './Store'
-import debounce from '../utils/debounce'
 
 
 type Props = RouteComponentProps<{
@@ -31,10 +31,13 @@ class Header extends React.Component<Props, State> {
   resizeObs: any
 
   componentDidMount = () => {
-    window.addEventListener('scroll', this.handleScroll.bind(this))
+    window.addEventListener('scroll', this.debouncedHandleScroll.bind(this))
     this.resizeObs = new ResizeObserver(this.updateContentHeight.bind(this))
       .observe(this.containerRef.current)
   }
+
+  componentWillUnmount = () =>
+    window.removeEventListener('scroll', this.debouncedHandleScroll.bind(this))
 
   updateContentHeight = () =>
     this.setState({
@@ -42,7 +45,12 @@ class Header extends React.Component<Props, State> {
     })
 
   handleScroll = (e: any) =>
-    this.setState({ scrollY: e.currentTarget.scrollY })
+    e?.currentTarget?.scrollY &&
+      this.setState({ scrollY: e.currentTarget.scrollY })
+
+  debouncedHandleScroll =
+    // debounce(this.handleScroll.bind(this), 55)
+    this.handleScroll.bind(this)
 
   isDesktop = () => 
     this.state.containerWidth >= 744

@@ -411,7 +411,7 @@ const schedule = [
       },
       {
         date: '19 сентября, вс',
-        time: '21:30 - 22: 00',
+        time: '21:30 - 22:00',
         otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
       },
     ],
