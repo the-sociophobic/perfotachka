@@ -30,7 +30,7 @@ export type Show = {
   startDate?: string
   endDate?: string
   time?: string
-  registerLink?: string
+  registerLink?: number
   otherText?: string | JSX.Element
 }
 

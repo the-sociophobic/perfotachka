@@ -130,12 +130,12 @@
       color: $gray
       cursor: pointer
       text-decoration: line-through
-      text-underline-offset: .25rem
-      text-decoration-thickness: from-font
       &--active
         color: $primary
         cursor: default
         text-decoration: underline
+        text-underline-offset: .25rem
+        text-decoration-thickness: from-font
 
 .Day
   &__shows
@@ -146,6 +146,14 @@
   @extend .py-3
   // &:not(&::last-of-type)
   border-bottom: $border
+  &__register
+    @extend .p
+    @extend .p--m
+    @extend .font-orange
+    cursor: pointer
+    text-decoration: underline
+    text-underline-offset: .25rem
+    text-decoration-thickness: from-font
     
 
 

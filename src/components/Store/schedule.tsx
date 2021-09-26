@@ -1,7 +1,7 @@
 import Link from '../Link'
+import { SpektRaw } from './Types'
 
-
-const schedule = [
+const schedule: SpektRaw[] = [
   {
     name: 'Открытие «Фестиваля Перфотачки» в Музее Стрит-Арта',
     age: 16,
@@ -15,8 +15,8 @@ const schedule = [
     shows: [
       {
         date: '6 сентября, пн',
-        time: '18:30',
-        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
+        time: '18:30 - 23:30',
+        registerLink: 1759691,
       },
     ],
   },
@@ -30,7 +30,7 @@ const schedule = [
       {
         date: '6 сентября, пн',
         time: '20:00 - 20:45',
-        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
+        registerLink: 1792982,
       },
     ],
   },
@@ -49,7 +49,7 @@ const schedule = [
       {
         date: '6 сентября, пн',
         time: '21:00 - 21:50',
-        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
+        registerLink: 1792982,
       },
     ],
   },
@@ -64,7 +64,7 @@ const schedule = [
       {
         date: '6 сентября, пн',
         time: '19:00 - 00:00',
-        registerLink: 'https://perfotachka.timepad.ru/event/1759691/',
+        registerLink: 1792982,
       },
     ],
   },
@@ -93,13 +93,13 @@ const schedule = [
     shows: [
       {
         date: '8 сентября, ср',
-        time: '14:00 - 14:45',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762452/'
+        time: '14:00 - 14:40',
+        registerLink: 1762452,
       },
       {
         date: '20 сентября',
-        time: '14:00 - 14:45',
-        otherText: <>Регистрация на 20 сентября откроется 15 сентября. Мы напомним о ней в рассылке:  <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
+        time: '14:00 - 14:40',
+        registerLink: 1762452,
       },
     ],
   },
@@ -128,27 +128,27 @@ const schedule = [
       {
         date: '10 сентября, пт',
         time: '19:00 - 19:45',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 1762458,
       },
       {
         date: '10 сентября, пт',
         time: '19:45 - 20:30',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 1762458,
       },
       {
         date: '10 сентября, пт',
         time: '20:30 - 21:15',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 1762458,
       },
       {
         date: '10 сентября, пт',
         time: '21:15 - 22:00',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 1762458,
       },
       {
         date: '10 сентября, пт',
         time: '22:00 - 22:45',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762458/',
+        registerLink: 1762458,
       },
     ],
   },
@@ -167,53 +167,47 @@ const schedule = [
       {
         date: '10 сентября, пт',
         time: '16:00 - 16:45',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762469/',
+        registerLink: 1762469,
       },
       {
         date: '10 сентября, пт',
         time: '16:45 - 17:30',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762469/',
+        registerLink: 1762469,
       },
       {
         date: '10 сентября, пт',
         time: '17:30 - 18:15',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762469/',
+        registerLink: 1762469,
       },
       {
         date: '18 сентября, сб',
         time: '18:00 - 18:45',
-        registerLink: '',
-        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
+        registerLink: 1762469,
       },
       {
         date: '18 сентября, сб',
         time: '18:45 - 19:30',
-        registerLink: '',
-        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
+        registerLink: 1762469,
       },
       {
         date: '18 сентября, сб',
         time: '19:30 - 20:15',
-        registerLink: '',
-        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
+        registerLink: 1762469,
       },
       {
         date: '26 сентября, вс',
         time: '18:00 - 18:45',
-        registerLink: '',
-        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
+        registerLink: 1762469,
       },
       {
         date: '26 сентября, вс',
         time: '18:45 - 19:30',
-        registerLink: '',
-        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
+        registerLink: 1762469,
       },
       {
         date: '26 сентября, вс',
         time: '19:30 - 20:15',
-        registerLink: '',
-        otherText: <>Регистрация на 18 сентября откроется 8 сентября, на 26 сентября —  15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>
+        registerLink: 1762469,
       },
     ],
   },
@@ -227,8 +221,8 @@ const schedule = [
     shows: [
       {
         date: '11 сентября, сб',
-        time: 'в любое время с 16:00 до 20:00',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762552/',
+        time: '16:00 до 20:00',
+        registerLink: 1762552,
       },
     ],
   },
@@ -246,8 +240,8 @@ const schedule = [
     shows: [
       {
         date: '12 сентбря, вс',
-        time: '',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762568/',
+        time: '12:00 - 15:00',
+        registerLink: 1762568,
       },
     ],
   },
@@ -267,28 +261,28 @@ const schedule = [
     shows: [
       {
         date: '12 сентбря, вс',
-        time: '19.00-19:30',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
+        time: '19:00-19:30',
+        registerLink: 1762562,
       },
       {
         date: '12 сентбря, вс',
-        time: '19.45-20:15',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
+        time: '19:45-20:15',
+        registerLink: 1762562,
       },
       {
         date: '12 сентбря, вс',
-        time: '20.30-21:00',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
+        time: '20:30-21:00',
+        registerLink: 1762562,
       },
       {
         date: '12 сентбря, вс',
-        time: '21.15-21:45',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
+        time: '21:15-21:45',
+        registerLink: 1762562,
       },
       {
         date: '12 сентбря, вс',
-        time: '22.00-22:30',
-        registerLink: 'https://perfotachka.timepad.ru/event/1762562/',
+        time: '22:00-22:30',
+        registerLink: 1762562,
       },
     ],
   },
@@ -303,7 +297,82 @@ const schedule = [
       {
         date: '13 сентября, пн',
         time: '',
-        registerLink: '',
+        registerLink: 1792982,
+      },
+    ],
+  },
+  {
+    name: 'Зона комфорта',
+    age: 18,
+    short: 'Чилл под одеялком',
+    desc: '',
+    disc: 'Для тех, кто хочет почувствовать себя везде как дома.',
+    creators: 'KREATORZ (Таля и Камилла из Тюмени), Паша Дорохов',
+    shows: [
+      {
+        date: '14 сентября',
+        time: '13:00 - 15:00',
+        registerLink: 1766810,
+      },
+      {
+        date: '14 сентября',
+        time: '16:00 - 18:00',
+        registerLink: 1766810,
+      },
+      {
+        date: '14 сентября',
+        time: '19:00 - 21:00',
+        registerLink: 1766810,
+      },
+    ],
+  },
+  {
+    name: 'ГипноТачка',
+    age: 18,
+    short: 'Перформативная медитация',
+    desc: '',
+    disc: 'Для тех, кто готов отвечать на вопросы и медитировать в машине.',
+    creators: 'Аня Добранская',
+    shows: [
+      {
+        date: '15 сентября',
+        time: '19:00 - 19:30',
+        registerLink: 1767458,
+      },
+      {
+        date: '15 сентября',
+        time: '20:00 - 20:30',
+        registerLink: 1767458,
+      },
+      {
+        date: '15 сентября',
+        time: '21:00 - 21:30',
+        registerLink: 1767458,
+      },
+      {
+        date: '15 сентября',
+        time: '22:00 - 22:30',
+        registerLink: 1767458,
+      },
+      {
+        date: '21 сентября',
+        time: '19:00 - 19:30',
+        registerLink: 1767458,
+      },
+      {
+        date: '21 сентября',
+        time: '20:00 - 20:30',
+        registerLink: 1767458,
+      },
+      {
+        date: '21 сентября',
+        time: '21:00 - 21:30',
+        registerLink: 1767458,
+      },
+      {
+        date: '21 сентября',
+        time: '22:00 - 22:30',
+        registerLink: 1767458,
       },
     ],
   },
@@ -316,9 +385,14 @@ const schedule = [
     creators: 'Марта Райцес',
     shows: [
       {
-        date: '16 сентября, чт',
-        time: '',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        date: '27 сентября',
+        time: '20:00 - 21:00',
+        registerLink: 1792982
+      },
+      {
+        date: '27 сентября',
+        time: '22:00 - 23:00',
+        registerLink: 1792982
       },
     ],
   },
@@ -336,8 +410,8 @@ const schedule = [
     shows: [
       {
         date: '17 сентября, пт',
-        time: '21:30 - 22:30 (23:00)',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        time: '21:30 - 22:30',
+        registerLink: 1772624
       },
     ],
   },
@@ -352,17 +426,17 @@ const schedule = [
       {
         date: '18 сентября',
         time: '12:00 - 12:30',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1774925
       },
       {
         date: '18 сентября',
         time: '12:40 - 13:10',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1774925
       },
       {
         date: '18 сентября',
         time: '13:20 - 13:50',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1774925
       },
     ],
   },
@@ -377,7 +451,7 @@ const schedule = [
       {
         date: '19 сентября, вс',
         time: '10:00 - 15:00',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1766781
       },
     ],
   },
@@ -392,27 +466,27 @@ const schedule = [
       {
         date: '19 сентября, вс',
         time: '19:30 - 20:00',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1766768
       },
       {
         date: '19 сентября, вс',
         time: '20:00 - 20:30',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1766768
       },
       {
         date: '19 сентября, вс',
         time: '20:30 - 21:00',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1766768
       },
       {
         date: '19 сентября, вс',
         time: '21:00 - 21:30',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1766768
       },
       {
         date: '19 сентября, вс',
         time: '21:30 - 22:00',
-        otherText: <>Регистрация откроется 8 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        registerLink: 1766768
       },
     ],
   },
@@ -452,9 +526,9 @@ const schedule = [
     creators: 'Даша Мовельян, Лена Юферова',
     shows: [
       {
-        date: '22 сентября, ср',
-        time: '',
-        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        date: '22 сентября',
+        time: '20:00 - 21:00',
+        registerLink: 1775064
       },
     ],
   },
@@ -467,9 +541,9 @@ const schedule = [
     creators: 'Молканова Анна Андреевна и перформеры',
     shows: [
       {
-        date: '23 сентября, чт',
-        time: '15:00 - 15:50',
-        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        date: '23 сентября',
+        time: '15:00 - 16:00',
+        registerLink: 1775990
       },
     ],
   },
@@ -486,9 +560,54 @@ const schedule = [
     creators: 'Дарья Савельева',
     shows: [
       {
-        date: '24 сентября, пт',
-        time: '',
-        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        date: '24 сентября',
+        time: '17:00 - 17:30',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '17:30 - 18:00',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '18:00 - 18:30',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '18:30 - 19:00',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '19:00 - 19:30',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '19:30 - 20:00',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '20:00 - 20:30',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '20:30 - 21:00',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '21:00 - 21:30',
+        registerLink: 1776023
+      },
+      {
+        date: '24 сентября',
+        time: '21:30 - 22:00',
+        registerLink: 1776023
       },
     ],
   },
@@ -501,9 +620,9 @@ const schedule = [
     creators: 'Анастасия Быцань, Марина Бурдинская и Вацлав Дембовский',
     shows: [
       {
-        date: '25 сентября, сб',
-        time: '',
-        otherText: <>Регистрация откроется 15 сентября. Мы напомним о ней в рассылке: <Link to='https://forms.gle/ujLTRP8pGWSz8iD1A'>подпишитесь</Link>.</>,
+        date: '25 сентября',
+        time: '17:00 - 18:00',
+        registerLink: 1776012
       },
     ],
   },
@@ -518,7 +637,7 @@ const schedule = [
       {
         date: '',
         time: '',
-        registerLink: '',
+        registerLink: 1792982,
       },
     ],
   },
@@ -531,9 +650,28 @@ const schedule = [
     creators: 'Анастасия Быцань, Марина Бурдинская, Вацлав Дембовский',
     shows: [
       {
-        date: '',
-        time: '',
-        registerLink: '',
+        date: '28 сентября',
+        time: '18:00 - 19:00',
+        registerLink: 1782056,
+        otherText: 'регистрация только для мужчин'
+      },
+      {
+        date: '28 сентября',
+        time: '20:00 - 21:00',
+        registerLink: 1782056,
+        otherText: 'регистрация только для мужчин'
+      },
+      {
+        date: '30 сентября',
+        time: '18:00 - 19:00',
+        registerLink: 1782056,
+        otherText: 'регистрация только для женщин'
+      },
+      {
+        date: '30 сентября',
+        time: '18:00 - 19:00',
+        registerLink: 1782056,
+        otherText: 'регистрация только для женщин'
       },
     ],
   },
@@ -548,7 +686,7 @@ const schedule = [
       {
         date: '',
         time: '',
-        registerLink: '',
+        registerLink: 1792982,
       },
     ],
   },
@@ -561,9 +699,14 @@ const schedule = [
     creators: 'Команда DramaTechie',
     shows: [
       {
-        date: '',
-        time: '',
-        registerLink: '',
+        date: '1 октября',
+        time: '17:00 - 17:20',
+        registerLink: 1782463,
+      },
+      {
+        date: '2 октября',
+        time: '17:00 - 17:20',
+        registerLink: 1782463,
       },
     ],
   },
@@ -592,7 +735,7 @@ const schedule = [
       {
         date: '',
         time: '',
-        registerLink: '',
+        registerLink: 1792982,
       },
     ],
   },
@@ -607,7 +750,7 @@ const schedule = [
       {
         date: '',
         time: '',
-        registerLink: '',
+        registerLink: 1792982,
       },
     ],
   },
@@ -620,9 +763,9 @@ const schedule = [
     creators: 'Федор Курехин',
     shows: [
       {
-        date: '',
-        time: '',
-        registerLink: '',
+        date: '5 октября',
+        time: '17:15 - 22:00',
+        registerLink: 1779866,
       },
     ],
   },
@@ -635,9 +778,9 @@ const schedule = [
     creators: 'Маша Плаксина',
     shows: [
       {
-        date: '',
-        time: '',
-        registerLink: '',
+        date: '4 октября',
+        time: '15:00 - 17:30',
+        registerLink: 1790942,
       },
     ],
   },
@@ -653,7 +796,7 @@ const schedule = [
         startDate: '7 сентября',
         endDate: '7 октября',
         time: '∞',
-        otherText: 'Попасть на «Голос дороги» можно в любое время в течение всего фестиваля, достаточно оказаться рядом с Перфотачкой и попросить водителя отправиться в путешествие.',
+        otherText: <>Попасть на «Голос дороги» можно в любое время в течение всего фестиваля, достаточно оказаться рядом с Перфотачкой и попросить водителя отправиться в путешествие. Узнать актуальное положение тачки можно в <Link to='https://t.me/perfotachkachat'>чатике</Link></>,
       },
     ],
   },
@@ -669,7 +812,7 @@ const schedule = [
         startDate: '7 сентября',
         endDate: '7 октября',
         time: '∞',
-        otherText: 'Посмотреть путеводитель можно в любое время в течение всего фестиваля, достаточно оказаться рядом с Перфотачкой и попросить водителя открыть бардачок.',
+        otherText: <>Посмотреть путеводитель можно в любое время в течение всего фестиваля, достаточно оказаться рядом с Перфотачкой и попросить водителя открыть бардачок. Узнать актуальное положение тачки можно в <Link to='https://t.me/perfotachkachat'>чатике</Link></>,
       },
     ],
   },
