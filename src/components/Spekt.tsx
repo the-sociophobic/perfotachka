@@ -36,21 +36,27 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
             </h2>
           {/* </Link> */}
           {spekt.creators &&            
-            <Persons persons={spekt.creators} />
+            <Persons
+              persons={spekt.creators}
+              className='p--m'
+            />
           }
           {spekt.short &&
-            <div className='p'>
-              <i>{spekt.short}</i>
+            <div className='p p--s'>
+              <i className='font-gray'>
+                {spekt.short}
+              </i>
             </div>
           }
           <Dropdown title='Подробнее...'>
             {spekt.disc &&
-              <div className='w-100 mb-xs'>
+              <div className='w-100 p p--s font-gray'>
                 {spekt.disc}
+                <hr className='hr'/>
               </div>
             }
             {spekt.desc &&
-              <div className='w-100 mt-xs'>
+              <div className='w-100'>
                 {spekt.desc}
               </div>
             }

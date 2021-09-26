@@ -5,6 +5,7 @@ import About from './About'
 import QandA from './QandA'
 import Days from './Days'
 import Titles from './Titles'
+import Chat from '../components/Chat'
 
 
 class Home extends React.Component {
@@ -28,6 +29,7 @@ class Home extends React.Component {
         <QandA />
         <Days />
         <Titles />
+        <Chat />
       </div>
     )
   }

@@ -13,11 +13,11 @@ class About extends React.Component {
         ref={this.context.aboutRef}
         className='container'
       >
+        <h1 className='h1 h1--xl font-orange'>
+          ЧТО ЭТО ?
+        </h1>
         <div className='box p-4 mb-s mb-md-m'>
-          <h1 className='h1 mb-xs'>
-            ЧТО ЭТО ?
-          </h1>
-          <div className='p'>
+          <div className='p p--l'>
             Самоорганизованной фестиваль, программа которого полностью собрана вокруг Перфотачки — серой Toyota Corolla 1987 года. 
           </div>
           <Dropdown title='А можно подробнее?'>

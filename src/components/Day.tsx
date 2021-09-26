@@ -27,8 +27,11 @@ const Day: React.FC<Props> = ({ day }) =>
         {day.shows
           .sort((a: MappedShow, b: MappedShow) =>
             (a.time?.replace('∞', '9') || '9').localeCompare(b.time?.replace('∞', '9') || '9'))
-          .map((show: MappedShow) =>
-            <Spekt spekt={show} />
+          .map((show: MappedShow, index: number) =>
+            <Spekt
+              key={index}
+              spekt={show}
+            />
         )}
       </div>
     </div>

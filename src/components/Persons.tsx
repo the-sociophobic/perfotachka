@@ -8,21 +8,24 @@ import { Person } from './Store/Types'
 type PersonsProps = {
   persons?: Person[]
   string?: string
+  className?: string
 }
 
 
 const Persons: React.FC<PersonsProps> = ({
   persons,
-  string
+  string,
+  className
 }) => {
   const parsed = persons || parsePersons(string || '')
 
-  return <div className='p p--s d-flex flex-row flex-wrap mb-xxs'>
+  return (
+    <div className={`p d-flex flex-row flex-wrap ${className}`}>
       {parsed
         .map((creator: Person, index: number) =>
           <div
-            key={creator.name}
-            className='me-1'
+            key={creator.name + index}
+            className='me-1 inherit-all'
           >
             <Link to={creator.link}>
               {creator.name}
@@ -30,6 +33,7 @@ const Persons: React.FC<PersonsProps> = ({
           </div>
       )}
     </div>
+  )
 }
 
 
