@@ -30,14 +30,14 @@ class Header extends React.Component<Props, State> {
   containerRef: any = React.createRef()
   resizeObs: any
 
-  // componentDidMount = () => {
-  //   window.addEventListener('scroll', this.debouncedHandleScroll.bind(this))
-  //   this.resizeObs = new ResizeObserver(this.updateContentHeight.bind(this))
-  //     .observe(this.containerRef.current)
-  // }
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.debouncedHandleScroll.bind(this))
+    this.resizeObs = new ResizeObserver(this.updateContentHeight.bind(this))
+      .observe(this.containerRef.current)
+  }
 
-  // componentWillUnmount = () =>
-  //   window.removeEventListener('scroll', this.debouncedHandleScroll.bind(this))
+  componentWillUnmount = () =>
+    window.removeEventListener('scroll', this.debouncedHandleScroll.bind(this))
 
   updateContentHeight = () =>
     this.setState({
