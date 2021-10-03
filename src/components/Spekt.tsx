@@ -1,5 +1,4 @@
 import React from 'react'
-import { isBefore } from 'date-fns'
 
 import Link from './Link'
 import Dropdown from './Dropdown'
@@ -19,7 +18,7 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
           <div className='h1'>
             {spekt.time}
           </div>
-          {(spekt.registerLink && !isBefore(spekt.dateObj || 0, new Date())) &&
+          {spekt.registerLink &&
             <Link
               className='Spekt__register'
               to={`https://perfotachka.timepad.ru/event/${spekt.registerLink}/`}
