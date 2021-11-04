@@ -62,10 +62,11 @@ export type StateType = {
 }
 
 const parsedSchedule = parseSchedule(schedule)
-const todaysIndex = parseSchedule(schedule).length - parsedSchedule
-  .filter((day: DayType) =>
-    isToday(day.date) || isAfter(day.date, new Date()))
-  .length
+// const todaysIndex = parseSchedule(schedule).length - parsedSchedule
+//   .filter((day: DayType) =>
+//     isToday(day.date) || isAfter(day.date, new Date()))
+//   .length
+const todaysIndex = 0
 
 export const initialState = {
   ready: true,

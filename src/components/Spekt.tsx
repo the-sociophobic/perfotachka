@@ -44,7 +44,7 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
               {spekt.name}
             </h2>
           {/* </Link> */}
-          {spekt.creators &&
+          {spekt.creators.length > 0 &&
             <div className='d-flex flex-row'>
               <div className='me-2 font-gray'>
                 made by

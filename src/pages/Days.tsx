@@ -11,7 +11,7 @@ class Days extends React.Component {
 
   render = () =>
     <div className='Days'>
-      <div className='Days__trigger'>
+      {/* <div className='Days__trigger'>
         <div
           className={`Days__trigger__item
           ${this.context.filteringIndex !== 0 && 'Days__trigger__item--active'}`}
@@ -32,7 +32,7 @@ class Days extends React.Component {
           >
             ВСЕ
           </div>
-      </div>
+      </div> */}
 
       <div className='container pt-s'>
         {this.context.days

@@ -42,10 +42,11 @@ const parseSchedule = (schedule: SpektRaw[]): Day[] => {
           if (show.date)
             dates = [parseDate(show.date)]
           if (show.startDate && show.endDate) {
-            dates = eachDayOfInterval({
-              start: parseDate(show.startDate),
-              end: parseDate(show.endDate)
-            })
+            // dates = eachDayOfInterval({
+            //   start: parseDate(show.startDate),
+            //   end: parseDate(show.endDate)
+            // })
+            dates = [new Date('2021-09-05')]
           }
 
           dates.forEach((date: Date) =>

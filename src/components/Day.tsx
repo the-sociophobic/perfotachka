@@ -1,6 +1,11 @@
 import React from 'react'
 
-import { format, isToday, isTomorrow } from 'date-fns'
+import {
+  format,
+  isToday,
+  isTomorrow,
+  isSameDay
+} from 'date-fns'
 import { ru } from 'date-fns/locale'
 
 import Spekt from './Spekt'
@@ -21,18 +26,22 @@ const Day: React.FC<Props> = ({ day }) =>
       className='Day mb-xs'
     >
       <h1 className='w-100 h1 h1--xl font-orange'>
-        {format(
-          day.date,
-          `dd MMMM, ${isToday(day.date) ?
-              'сегодня'
-              :
-              isTomorrow(day.date) ?
-                'завтра'
+        {isSameDay(day.date, new Date('2021-09-05')) ?
+          'Ежедневные события'
+          :
+          format(
+            day.date,
+            `dd MMMM, ${isToday(day.date) ?
+                'сегодня'
                 :
-                'iiii'
-          }`,
-          { locale: ru }
-        )}
+                isTomorrow(day.date) ?
+                  'завтра'
+                  :
+                  'iiii'
+            }`,
+            { locale: ru }
+          )
+        }
       </h1>
       <div className='Day__shows'>
         {day.shows
