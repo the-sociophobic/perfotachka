@@ -59,6 +59,7 @@ export type StateType = {
   aboutRef: any
   QandARef: any
   titlesRef: any
+  mapRef: any
 }
 
 const parsedSchedule = parseSchedule(schedule)
@@ -78,4 +79,5 @@ export const initialState = {
   aboutRef: React.createRef(),
   QandARef: React.createRef(),
   titlesRef: React.createRef(),
+  mapRef: React.createRef(),
 }

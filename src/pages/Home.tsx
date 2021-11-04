@@ -3,6 +3,7 @@ import React from 'react'
 import { Context } from '../components/Store'
 import About from './About'
 import QandA from './QandA'
+import Map from './Map'
 import Days from './Days'
 import Titles from './Titles'
 import Chat from '../components/Chat'
@@ -27,6 +28,7 @@ class Home extends React.Component {
         </div>
         <About />
         <QandA />
+        <Map />
         <Days />
         <Titles />
         <Chat />

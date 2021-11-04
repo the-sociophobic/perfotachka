@@ -83,6 +83,10 @@ class Header extends React.Component<Props, State> {
         ref: this.context.QandARef,
         label: 'ВОПРОС ОТВЕТ'
       },
+      {
+        ref: this.context.mapRef,
+        label: 'ЛОКАЦИИ'
+      },
       ...this.context.days
         .slice(this.context.filteringIndex)
         .map((day: Day) => ({
