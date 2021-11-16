@@ -18,19 +18,14 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
           <div className='h1'>
             {spekt.time}
           </div>
-          {spekt.registerLink &&
+          {/* {spekt.registerLink &&
             <Link
               className='Spekt__register'
               to={`https://perfotachka.timepad.ru/event/${spekt.registerLink}/`}
             >
-            {/* <div
-              className='Spekt__register'
-              data-twf-target-state={`{"event_id": ${spekt.registerLink}}`}
-            > */}
-              Регистрация
-            {/* </div> */}
+              Подробнее
             </Link>
-          }
+          } */}
           {spekt.otherText &&
             <div className='p p--m'>
               {spekt.otherText}
@@ -39,11 +34,20 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
         </div>
 
         <div className='col-12 col-md-7 col-xl-8 px-4 px-sm-xs'>
-          {/* <Link to={`#${spekt.link}`}> */}
+          {spekt.registerLink ?
+            <Link
+              className='Spekt__register'
+              to={`https://perfotachka.timepad.ru/event/${spekt.registerLink}/`}
+            >
+              <h2 className='w-100 h2 font-orange'>
+                {spekt.name}
+              </h2>
+            </Link>
+            :
             <h2 className='w-100 h2 font-orange'>
               {spekt.name}
             </h2>
-          {/* </Link> */}
+          }
           {spekt.creators.length > 0 &&
             <div className='d-flex flex-row'>
               <div className='me-2 font-gray'>
@@ -62,7 +66,7 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
               </i>
             </div>
           } */}
-          <Dropdown title={spekt.short && spekt.short?.length > 0 ? spekt.short : 'Подробнее...'}>
+          {/* <Dropdown title={spekt.short && spekt.short?.length > 0 ? spekt.short : 'Подробнее...'}>
             {spekt.disc &&
               <div className='w-100 p p--s font-gray'>
                 {spekt.disc}
@@ -74,7 +78,7 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
                 {spekt.desc}
               </div>
             }
-          </Dropdown>
+          </Dropdown> */}
         </div>
       </div>
     </div>
