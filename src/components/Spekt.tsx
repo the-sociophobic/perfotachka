@@ -26,11 +26,11 @@ const Spekt: React.FC<Props> = ({ spekt }) =>
               Подробнее
             </Link>
           } */}
-          {spekt.otherText &&
+          {/* {spekt.otherText &&
             <div className='p p--m'>
               {spekt.otherText}
             </div>
-          }
+          } */}
         </div>
 
         <div className='col-12 col-md-7 col-xl-8 px-4 px-sm-xs'>
