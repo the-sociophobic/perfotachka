@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/perfotachka/static/css/main.e7174f60.chunk.css",
-    "main.js": "/perfotachka/static/js/main.e4702fc0.chunk.js",
-    "main.js.map": "/perfotachka/static/js/main.e4702fc0.chunk.js.map",
+    "main.js": "/perfotachka/static/js/main.35c01148.chunk.js",
+    "main.js.map": "/perfotachka/static/js/main.35c01148.chunk.js.map",
     "runtime-main.js": "/perfotachka/static/js/runtime-main.aa8f34dd.js",
     "runtime-main.js.map": "/perfotachka/static/js/runtime-main.aa8f34dd.js.map",
-    "static/js/2.63466ce8.chunk.js": "/perfotachka/static/js/2.63466ce8.chunk.js",
-    "static/js/2.63466ce8.chunk.js.map": "/perfotachka/static/js/2.63466ce8.chunk.js.map",
+    "static/js/2.73cfc059.chunk.js": "/perfotachka/static/js/2.73cfc059.chunk.js",
+    "static/js/2.73cfc059.chunk.js.map": "/perfotachka/static/js/2.73cfc059.chunk.js.map",
     "static/js/3.275dc115.chunk.js": "/perfotachka/static/js/3.275dc115.chunk.js",
     "static/js/3.275dc115.chunk.js.map": "/perfotachka/static/js/3.275dc115.chunk.js.map",
     "index.html": "/perfotachka/index.html",
     "static/css/main.e7174f60.chunk.css.map": "/perfotachka/static/css/main.e7174f60.chunk.css.map",
-    "static/js/2.63466ce8.chunk.js.LICENSE.txt": "/perfotachka/static/js/2.63466ce8.chunk.js.LICENSE.txt",
+    "static/js/2.73cfc059.chunk.js.LICENSE.txt": "/perfotachka/static/js/2.73cfc059.chunk.js.LICENSE.txt",
     "static/media/index.sass": "/perfotachka/static/media/dropdown__arrow.6f9ba5d5.svg",
     "static/media/logo.018e33a9.png": "/perfotachka/static/media/logo.018e33a9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.aa8f34dd.js",
-    "static/js/2.63466ce8.chunk.js",
+    "static/js/2.73cfc059.chunk.js",
     "static/css/main.e7174f60.chunk.css",
-    "static/js/main.e4702fc0.chunk.js"
+    "static/js/main.35c01148.chunk.js"
   ]
 }
