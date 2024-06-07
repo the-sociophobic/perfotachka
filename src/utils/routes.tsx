@@ -14,7 +14,7 @@ type Route = {
 const routes: Route[] = [
   {
     exact: true,
-    to: "/",
+    to: "/*",
     Comp: <Home />
   },
 

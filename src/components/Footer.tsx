@@ -15,7 +15,7 @@ class Footer extends React.Component {
           <div className="row">
             <div className="col">
               <div className='p p--m text-center'>
-                Поздравляю, вы домотали сайт до конца! Кстати, его сделал <Link to='https://instagram.com/the_sociophobic'>the_sociophobic</Link>
+                Поздравляю, вы домотали сайт до конца! Кстати, его сделал <Link to='https://t.me/the_sociophobic'>the_sociophobic</Link>
               </div>
             </div>
           </div>
