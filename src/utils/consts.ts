@@ -1,0 +1,1 @@
+export const perfotachkaChatLink = 'https://t.me/+A172fdJxHXFkOTZi'

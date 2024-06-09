@@ -1,8 +1,9 @@
 import React from 'react'
+
 import Link from '../components/Link'
 import Persons from '../components/Persons'
-
 import { Context } from '../components/Store'
+import { perfotachkaChatLink } from '../utils/consts'
 
 
 class Titles extends React.Component {
@@ -29,7 +30,7 @@ class Titles extends React.Component {
             <Link to='https://instagram.com/perfotachka'>инст</Link>
           </div>
           <div className='p p--l'>
-          <Link to='https://t.me/perfotachkachat'>чат</Link>
+          <Link to={perfotachkaChatLink}>чат</Link>
           </div>
           <div className='p p--l'>
             сайт — <Link to='https://instagram.com/the_sociophobic'>Леф</Link>
