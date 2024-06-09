@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/perfotachka/static/css/main.e7174f60.chunk.css",
-    "main.js": "/perfotachka/static/js/main.35c01148.chunk.js",
-    "main.js.map": "/perfotachka/static/js/main.35c01148.chunk.js.map",
+    "main.js": "/perfotachka/static/js/main.4ca3296f.chunk.js",
+    "main.js.map": "/perfotachka/static/js/main.4ca3296f.chunk.js.map",
     "runtime-main.js": "/perfotachka/static/js/runtime-main.aa8f34dd.js",
     "runtime-main.js.map": "/perfotachka/static/js/runtime-main.aa8f34dd.js.map",
     "static/js/2.73cfc059.chunk.js": "/perfotachka/static/js/2.73cfc059.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.aa8f34dd.js",
     "static/js/2.73cfc059.chunk.js",
     "static/css/main.e7174f60.chunk.css",
-    "static/js/main.35c01148.chunk.js"
+    "static/js/main.4ca3296f.chunk.js"
   ]
 }
